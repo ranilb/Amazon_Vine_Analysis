@@ -1,2 +1,2 @@
 # Amazon Vine Analysis
-In this project, we analyze Amazon reviews written by members of the paid Amazon Vine program to determine if there is any bias toward favorable reviews from Vine members in a selected dataset.
+In this project, we analyze Amazon reviews written by members of the paid Amazon Vine program to determine if there is any bias toward favorable reviews from Vine members in a selected dataset. The data set contains reviews of a specific product, from clothing apparel to wireless products. We used PySpark to perform the ETL process to extract the dataset, transform the data, connect to an AWS RDS instance, and load the transformed data into pgAdmin.
