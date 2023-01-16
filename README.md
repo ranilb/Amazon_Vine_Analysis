@@ -19,8 +19,11 @@ For example, the following pictures show the products dataframe in in google col
 <img width="716" alt="Screen Shot 2023-01-15 at 5 35 40 PM" src="https://user-images.githubusercontent.com/112113327/212572132-c004a8fe-38d4-4e26-b791-1a417c23240a.png">
 
 
+
 ## Deliverable 2: Determine Bias of Vine Reviews 
 This part is completed in "Vine_Review_Analysis.ipynb". 
+
+
 
 ## Deliverable 3:A Written Report on the Analysis
 In the next step, we wanted to check if there is any bias toward favorable reviews from paid members in the dataset. First, the [Toys data set](https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Toys_v1_00.tsv.gz) was transformed to a dataframe using PySpark in a google Colab Notebook and followed the steps explained in the next section.
@@ -46,6 +49,7 @@ Then the paid five-star percentage was computed for vine reviews as shown in the
 
 **Therefore, the five-review percentage for the vine reviews is 34.12%**
 
+
 Simillarly, total number of five-star reviews (30072) and the totoal muber of reviews (62283) were computed for unpaid reviews and the results are shown below:
 
 ![Screen Shot 2023-01-15 at 6 44 39 PM](https://user-images.githubusercontent.com/112113327/212574018-aa751bdd-5fe3-417f-89b0-ebfcc909f6dd.png)
@@ -57,3 +61,6 @@ Then the five-star percentage was coputed forunpaid reviews as shown in the foll
 ![Screen Shot 2023-01-15 at 6 44 49 PM](https://user-images.githubusercontent.com/112113327/212574053-189f1e0f-4b45-47c6-8039-451ea9cfdc7f.png)
 
 **Therefore, the five-review percentage for the unpaid reviews is 48.21%**
+
+### Summary
+According to the results shown in the previous section, the five-review percentage for the paid reviews is _34.12%_ while the five-review percentage for the unpaid reviews is _48.21%_. This leads us to conclude that there is no positivity bias for reviews in the Vine program. Since there is a significant difference between the percentages toward the negativity bias, this analysis need to further extend by considering some other options. One of that would be considering both five-star and the four-star reviews for the analysis. In additon to that, we can determine the mean, median and the starndard deviation to see how the spread of the stars for both categories.
